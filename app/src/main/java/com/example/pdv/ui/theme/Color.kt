@@ -13,3 +13,5 @@ val Pink40 = Color(0xFF7D5260)
 val Sky500 = Color(0xFF0ea5e9)
 
 val Gray100 = Color(0xFFF3F4F6)
+
+val Green500 = Color(0xFF22C55E)
