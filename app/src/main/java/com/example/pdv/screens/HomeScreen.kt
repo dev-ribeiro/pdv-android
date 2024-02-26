@@ -19,12 +19,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
 import com.example.pdv.ui.theme.Gray100
 import com.example.pdv.ui.theme.Green500
 import com.example.pdv.ui.theme.Sky500
 
 @Composable
-fun HomeScreen() {
+fun HomeScreen(navController: NavController) {
     Column {
         Box(
             modifier = Modifier
@@ -61,7 +62,7 @@ fun HomeScreen() {
                         modifier = Modifier.requiredWidth(150.dp)
                     ) {
                         Button(
-                            onClick = {},
+                            onClick = {navController.navigate("product")},
                             colors = ButtonDefaults.buttonColors(
                                 containerColor = Green500
                             )
